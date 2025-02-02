@@ -1,5 +1,5 @@
 {% set name = "django-appointment" %}
-{% set version = "3.7.4" %}
+{% set version = "3.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django_appointment-{{ version }}.tar.gz
-  sha256: 674c97c8adfae5a9cfae423d4f315ae0cf7f8df197ff03dbb821866264b72fc7
+  sha256: d3bd0959c9cf13d9474f0ca3fb82aff94a348d5f26ad6c194e22f456a467b4ad
 
 build:
   noarch: python
