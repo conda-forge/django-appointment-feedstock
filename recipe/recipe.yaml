@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: django-appointment
-  version: "3.12.0"
+  version: "3.13.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_appointment-${{ version }}.tar.gz
-  sha256: c46d8ebd3a82e828037e91b4149b3138b61f7572b048375bd96ffe8eceba3784
+  sha256: 757cb0fdb6270f51a1549ea95e4bf5b7a97868e5b11017acbb35f634d14ba35e
 
 build:
   number: 0
@@ -20,13 +20,13 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - setuptools >=84.0.0
+    - setuptools >=84.2.0
     - wheel
     - pip
   run:
     - python >=${{ python_min }}
     - django >=4.2,<7.0
-    - pillow >=10.4,<13.0
+    - pillow >=13.0,<14.0
     - phonenumbers >=8.13,<10.0
     - django-phonenumber-field >=8.0,<9.0
     - babel >=2.15,<3.0
