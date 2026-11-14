@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: django-appointment
-  version: "3.13.1"
+  version: "3.14.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_appointment-${{ version }}.tar.gz
-  sha256: 757cb0fdb6270f51a1549ea95e4bf5b7a97868e5b11017acbb35f634d14ba35e
+  sha256: c8d745f67bd4477a502fa5909de0595041939c9f88551037209a1764814d491a
 
 build:
   number: 0
